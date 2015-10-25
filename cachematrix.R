@@ -1,4 +1,6 @@
-## Creates a special matrix object that can cache the inverse of the matrix given
+## Programming Assignment R Course JH Coursera
+
+## Creates a special matrix object that can cache a matrix and its inverse
 makeCacheMatrix <- function(x = matrix()) {
     inverse <- NULL
 
@@ -15,9 +17,9 @@ makeCacheMatrix <- function(x = matrix()) {
 
 
 ## Computes the inverse matrix of the matrix object in the cache
-## If the inverse has already been calculated, will return the inverse from the cache
+## If the inverse has already been calculated, it will return the inverse from the cache
 cacheSolve <- function(x, ...) {
-    inverse <- x$getInverse()
+    inverse <- x$getInverse() 
 
     if(!is.null(inverse)) inverse
     else{
